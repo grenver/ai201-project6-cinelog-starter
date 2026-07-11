@@ -88,17 +88,4 @@ While wiring this up I found that `get_watchlist()` was actually broken — `Fil
 
 `git log --oneline` on `feature/watchlist`, rebased onto `main` with no merge commits:
 
-```
-eaa253e fix: restore WatchlistEntry model with UUID film_id after main rebase
-dfc79ca test: add coverage for watchlist alphabetical sort order
-d414bc1 feat: add public visibility toggle to add_to_watchlist endpoint
-4d19f51 feat: add remove_from_watchlist endpoint
-bf69371 fix: add missing Film relationship for WatchlistEntry
-54c3e41 test: add tests for add_to_watchlist happy path, dedup, and nonexistent film_id
-de8f698 fix: add deduplication check to prevent duplicate watchlist entries
-24fdbdd fix: rename save_to_watchlist to add_to_watchlist per naming convention
-59502bd feat: add watchlist model and add_to_watchlist endpoint
-bbe206c Merge pull request #2 from ascherj/chore/add-gitignore   <- last commit on main, not part of this branch's work
-```
-
-<!-- TODO: replace this text block with an actual screenshot image of `git log --oneline` (e.g. `![git log](git-log.png)`) before final submission — this environment could produce the text output but not a literal screenshot. -->
+![git log --oneline output showing 10 conventional commits on feature/watchlist with no merge commits](docs/screenshots/git-log-oneline.png)
